@@ -1,19 +1,96 @@
-[gd_scene format=3 uid="uid://clb4u5oh5kg1t"]
+[gd_scene format=4 uid="uid://clb4u5oh5kg1t"]
 
-[ext_resource type="Texture2D" uid="uid://cucj53ff2shwt" path="res://Slug.png" id="1_hknhj"]
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_oxywt"]
+_data = PackedByteArray("AAADAAUAAAABAAAAIAEAACABAACMBAAAUklGRoQEAABXRUJQVlA4THgEAAAvH8FHEGfBNrJtJec77hASEtIyZdGHO7ThOLJtJbq4uztZaP6sCcGZWbk740iylew33J3rz4zASIZY9OhuaiJJilrL2cMbYhBASE72Q/z//wFMgAswABrAB+gAJdk5KStUiWrLtUDhK3zJphgiZmJl9pudShZSNKYD0G1NfW6KAdNU2PucpNW634dYT4fzebjet4Eqnb/V9/0dXM/JRJMQ/yoFXY3bab4Io/05HodcD7StzJBt227cNs0oQwiIVEnkdLSVQVVl8P//T1ToroUbUU9VRP8hCHDbtgHErK4DqH4irh5v/ut/7pLVM7o4+5VijRblnmgGXrRco87QmqsBZ79luSciQjNP+Dj7Lco9iVEo0P1kijj7Lck9UdVpQjoUSEQUY79luSdCc1EITKJA+y3IPSFOLygwc61A+12ge+IqZkqTDs5+l+eeuBfRMqUa6kk4+y3IPYlE+33bUpom4uy3JPckDsPQ903fTI4LsF8zy/ObefLn9+vIH+2cXQvN7de3zrP8ZgD8HwKAjFksFD/SAw6/p8/QF4t/9XjzX5v/2vzXtqsEKcGClCBQo0gJlqME0dU7GXARRUoAUQJMlwib1dyKK6AEsXJHB2oA4IjQzAqU4FtVAZSA0yXEoUD3kynGqqpub6+vIRLE6urq8vLiwhEdpkv/r6sKhZBCUCAR0Xh7e1tdgyS4uby8vPpyceGJDtOl94bnohCYRKdXEAl+/v6h8fby0r0EmC6js4mJQqDAzLUiJYAoAadLfzHTLAL//FVVKAl4SlC5o9coDdQAopYpBajrzx/ALA/fmCHhOyag/b5taRbguxlGgF/P3+27F7zZMAx93/TNZJuMhO+T4F8C2CcPYOcdIw4+TIJlCRAno+DDJEAKsHq8+a/Nf23+a0tRAgIPox2MOqRREHiYgVF3WLujmUZFQeBB/pd33jpkBkCi+vHGfWb47DpAnrvDAegzEaGZFQXe+2QcvU/XjTNDfF0o0P1kQoF3P+NxfJ/s/5XuA//oLVUVCiF1SoFEREHgXT89HlOh49H12w+HQzd+5B877x8QmotCYBIFgXd9Pc40Ho+nsdt5vs7zu/8AMVEIFJi5Vhh4z3NKjY7H0+n01/eLY5b/EN3FTBQ4uQaBd9YpNXpKdlaW/6+/qGVKfdY1DL330+NpTG06P8Qxx+8rM6L9vm0p9dmYmRv+ef7oyL8bHx4eH8fU586Xf8zxv/nyD8PQ903fTDZzO/Yv/NGPf5ezM//Ly8vr69vr22Qzz3PeOPiLxI+QIcLgLw//6vHmvzb/tfmvbWnJ6hnF2e/y8C/OaFH4NUMvukomimquBpj9loU/igjNrBFlv6Xhj1Eo0P1kijD7LQq/qk4T0qFAIqI4+y0Hv9BcFAKTKNB+F4jfz8TpBQVmrhVovwvE7ypmSpNOjCj7LQe/mRFTy5To69rMmb9ZHH7O8Xvi037ftpToG5vsyf/09NTM+L968zdN82fG/8eb/+7ujmf8bOZ4zjuWi9/R5+BLxb96vPmvjXNF")
+size_override = Vector2(288, 288)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cwriv"]
 radius = 26.0
 height = 70.0
 
+[sub_resource type="Animation" id="Animation_hknhj"]
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 4, 5, 6, 7, 8]
+}
+
+[sub_resource type="Animation" id="Animation_bt0ba"]
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 8, 12, 13, 14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_djfms"]
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 11, 9]
+}
+
+[sub_resource type="Animation" id="Animation_qj530"]
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 2, 3, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wgun0"]
+_data = {
+&"Attack": SubResource("Animation_hknhj"),
+&"Death": SubResource("Animation_bt0ba"),
+&"Hurt": SubResource("Animation_djfms"),
+&"Idle": SubResource("Animation_qj530")
+}
+
 [node name="RigidBody2D" type="RigidBody2D" unique_id=1947671434]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1079256320]
-texture = ExtResource("1_hknhj")
+texture_filter = 1
+texture = SubResource("PortableCompressedTexture2D_oxywt")
 hframes = 4
 vframes = 4
 metadata/_aseprite_wizard_interface_config_ = {
-"pending_changes": {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
 "convert_fps_field": 60.0,
 "convert_ms_field": 16.0,
 "convert_to_fps": false,
@@ -28,10 +105,10 @@ metadata/_aseprite_wizard_interface_config_ = {
 "player": "AnimationPlayer",
 "scale": "1.0",
 "slice": "",
-"source": "",
-"source_uid": -1
+"source": "res://Slug.aseprite",
+"source_uid": 8171766830275985115
 }
-}
+metadata/_aseprite_wizard_source_file_hash_ = "95952945fde20efada91b1c40a479be0"
 
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="." unique_id=1902803592]
 position = Vector2(4, 23)
@@ -40,6 +117,7 @@ shape = SubResource("CapsuleShape2D_cwriv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=204079557]
 root_node = NodePath("../Sprite2D")
+libraries/ = SubResource("AnimationLibrary_wgun0")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1447473726]
 position = Vector2(120, -58)
