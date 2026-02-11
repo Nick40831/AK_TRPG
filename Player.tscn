@@ -185,9 +185,12 @@ metadata/_aseprite_wizard_source_file_hash_ = "cf38b9a33be053e6bb3db7d4fc328c36"
 [node name="Area2D" type="Area2D" parent="." unique_id=240996519]
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="Area2D" unique_id=557797508]
-polygon = PackedVector2Array(0, 10, 15, 20, 25, 20, 35, 15, 40, 8, 40, -8, 35, -15, 25, -20, 15, -20, 0, -10)
+polygon = PackedVector2Array(0, 10, 15, 20, 25, 20, 35, 15, 35, -15, 25, -20, 15, -20, 0, -10)
 
-[node name="Cooldown" type="Timer" parent="Area2D/CollisionShape2D" unique_id=1915232002]
+[node name="CritCollisionShape2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1171365123]
+polygon = PackedVector2Array(35, 10, 35, 15, 40, 8, 40, -8, 35, -15, 35, -10)
+
+[node name="Cooldown" type="Timer" parent="Area2D" unique_id=1915232002]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=515834256]
 libraries/ = SubResource("AnimationLibrary_dtqjt")
