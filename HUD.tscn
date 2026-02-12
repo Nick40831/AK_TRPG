@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ynnrng16c36u"]
+
+[ext_resource type="Script" uid="uid://dl1jd6ifc1ijm" path="res://hud.gd" id="1_k5de2"]
+
+[node name="HUD" type="CanvasLayer" unique_id=428987077]
+script = ExtResource("1_k5de2")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=226392855]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -135.0
+offset_right = 20.0
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MessageLabel" type="Label" parent="." unique_id=162862702]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.5
+offset_top = -115.0
+offset_right = 220.5
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Originium Survive"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="StartButton" type="Button" parent="." unique_id=1313897581]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = 65.0
+offset_right = 50.0
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Start"
+autowrap_trim_flags = 0
+
+[node name="MessageTimer" type="Timer" parent="." unique_id=2034508394]
+
+[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]

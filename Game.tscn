@@ -3,8 +3,22 @@
 [ext_resource type="PackedScene" uid="uid://mnf72g24l181" path="res://Level.tscn" id="1_xkndl"]
 [ext_resource type="PackedScene" uid="uid://bhnvny8jjyepk" path="res://Player.tscn" id="2_u44n3"]
 
+[sub_resource type="Curve2D" id="Curve2D_xkndl"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 0, 0, 0, 0, 0, 480, 270, 0, 0, 0, 0, 0, 270, 0, 0, 0, 0, 0, 0)
+}
+point_count = 5
+
 [node name="Node" type="Node" unique_id=1723345942]
 
 [node name="Level" parent="." unique_id=1949414487 instance=ExtResource("1_xkndl")]
 
 [node name="Player" parent="." unique_id=1524241246 instance=ExtResource("2_u44n3")]
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1680422814]
+position = Vector2(240, 135)
+
+[node name="Path2D" type="Path2D" parent="." unique_id=52037041]
+curve = SubResource("Curve2D_xkndl")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=464843215]
